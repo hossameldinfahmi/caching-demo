@@ -1,0 +1,8 @@
+<div>
+  <h1>{{ title }}</h1>
+  <button (click)="fetchData()">Fetch Data</button>
+  <div *ngIf="cachedData">
+    <h2>Fetched Data:</h2>
+    <pre>{{ cachedData | json }}</pre>
+  </div>
+</div>
